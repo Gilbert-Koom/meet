@@ -3,6 +3,35 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Red Hat Display";
-    background-color: aqua;
+    
+
+}
+
+body{
+    background-color: #f2f2f2;
+}
+.container{
+    width: 80vw;
+    background-color: crimson;
+    
+}
+.b{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    
+
+}
+
+
+
+
+.c{
+    width: 80vw;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-row-gap: 2em;
+    grid-column-gap: 1em;
+
 
 }
