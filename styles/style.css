@@ -5,12 +5,17 @@
   font-family: "Red Hat Display";
 }
 
+div {
+  outline-style: outset;
+  outline-color: green;
+}
+
 body {
   background-color: #f2f2f2;
 }
 
 .container {
-  width: 80vw;
+  width: 100vw;
   background-color: crimson;
 }
 
@@ -26,4 +31,8 @@ body {
   grid-template-columns: 50% 50%;
   grid-row-gap: 2em;
   grid-column-gap: 1em;
+}
+
+.c div {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
