@@ -5,25 +5,64 @@
   font-family: "Red Hat Display";
 }
 
+button {
+  display: block;
+  margin: auto;
+}
+
 header {
   display: flex;
   justify-content: center;
 }
 
-.c > img {
-  width: 48vw;
-}
-
-.b > img {
-  width: 49vw;
-}
-
 img {
   object-fit: cover;
+  border-radius: 16px;
 }
 
-button {
-  display: block;
+main article h1 {
+  line-height: 44px;
+  color: #28283D;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  font-size: clamp(22px, 17vw, 35px);
+}
+main article p {
+  color: #87879D;
+  text-align: center;
+  width: 95%;
+}
+main article .first_button {
+  background-color: #4D96A9;
+  border-radius: 29px;
+}
+main article .first_button span:first-child {
+  color: #ffffff;
+}
+main article .first_button span:last-child {
+  color: #8FE3F9;
+}
+main article .first_button:active {
+  background-color: #71C0D4;
+}
+main article .second_button {
+  color: #ffffff;
+  border-radius: 29px;
+}
+
+.images_container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-row-gap: 1em;
+}
+
+.images_container > img {
+  width: 44vw;
+}
+
+.main > img {
+  width: 49vw;
 }
 
 footer {
@@ -31,19 +70,31 @@ footer {
   background-image: url(mobile-footer.jpg);
   background-size: cover;
   background-position: center;
-  background-blend-mode: multiply;
+  background-blend-mode: soft-light;
+  height: 300px;
+}
+footer p:first-child {
+  color: #fafafa;
+  line-height: 36px;
+  font-size: clamp(15px, 14vw, 35px);
+  text-align: center;
+  font-weight: 900;
+}
+footer .hi {
+  color: #fafafa;
+}
+footer button {
+  border-radius: 29px;
+}
+footer button span:first-child {
+  color: #ffffff;
+}
+footer button span:last-child {
+  color: #d9b8ff;
 }
 
 body {
   background-color: #f2f2f2;
-}
-
-.first_button {
-  background-color: #4D96A9;
-}
-
-.first_button:active {
-  background-color: #71C0D4;
 }
 
 .second_button {
@@ -58,22 +109,44 @@ body {
   background-color: #855FB1;
 }
 
+.product_description p:first-child {
+  text-transform: uppercase;
+  text-align: center;
+  color: #4d96a9;
+  font-size: clamp(15px, 5vw, 30px);
+  line-height: 26px;
+  letter-spacing: 4px;
+}
+.product_description .middle_p {
+  text-align: center;
+  color: #28283D;
+  line-height: 36px;
+  letter-spacing: 0cap;
+  font-size: clamp(20px, 11vw, 40px);
+  font-weight: 900;
+  background-color: brown;
+}
+.product_description p:last-child {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 26px;
+}
+
 @media (min-width: 321px) and (max-width: 768px) {
   footer {
     background-image: url(tablet-footer.jpg);
   }
-  button {
-    display: inline;
-  }
 }
 @media (min-width: 769px) {
-  .c > img {
+  .images_container > img {
     width: 24vw;
   }
-  .b > img {
+  .main > img {
     width: 35vw;
   }
-  .b {
+  .main {
     display: flex;
     justify-content: center;
     align-items: center;
