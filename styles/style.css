@@ -148,7 +148,8 @@ body {
 }
 @media (min-width: 769px) {
   .images_container {
-    display: inline;
+    display: flex;
+    justify-content: space-between;
   }
   .images_container > img {
     width: 24vw;
