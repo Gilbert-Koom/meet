@@ -5,6 +5,10 @@
   font-family: "Red Hat Display";
 }
 
+img {
+  max-width: 100%;
+}
+
 button {
   display: block;
   margin: auto;
@@ -65,7 +69,7 @@ main article div .second_button {
 }
 
 .main > img {
-  width: 49vw;
+  width: 45vw;
 }
 
 footer {
