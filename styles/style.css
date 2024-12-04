@@ -17,6 +17,8 @@ button {
 header {
   display: flex;
   justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1.2rem;
 }
 header p {
   color: #28283D;
@@ -27,15 +29,21 @@ img {
   border-radius: 16px;
 }
 
+main article {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
 main article h1 {
   line-height: 44px;
   color: #28283D;
   text-align: center;
   width: 80%;
   margin: auto;
+  margin-bottom: 1rem;
   font-size: clamp(22px, 17vw, 35px);
 }
 main article p {
+  margin-bottom: 1rem;
   color: #87879D;
   text-align: center;
   width: 95%;
@@ -43,6 +51,7 @@ main article p {
 main article div .first_button {
   background-color: #4D96A9;
   border-radius: 29px;
+  margin-bottom: 1rem;
 }
 main article div .first_button span:first-child {
   color: #ffffff;
@@ -73,7 +82,10 @@ main article div .second_button {
 }
 
 footer {
-  background-color: #4D96A9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #71C0D4;
   background-image: url(mobile-footer.jpg);
   background-size: cover;
   background-position: center;
@@ -131,10 +143,8 @@ body {
   letter-spacing: 0cap;
   font-size: clamp(20px, 11vw, 40px);
   font-weight: 900;
-  background-color: brown;
 }
 .product_description p:last-child {
-  text-transform: uppercase;
   text-align: center;
   font-weight: 300;
   font-size: 16px;
@@ -153,40 +163,106 @@ body {
     width: 25%;
   }
 }
-@media (min-width: 769px) {
+@media (min-width: 1000px) {
+  .header {
+    margin-top: 80px;
+  }
   .images_container {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 96px;
     display: flex;
     justify-content: space-between;
   }
   .images_container > img {
-    width: 24vw;
+    width: 18vw;
   }
   .main > img {
     width: 35vw;
   }
   .main {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+  }
+  .main article h1 {
+    font-size: 64px;
+    line-height: 64px;
+    font-weight: bold;
+  }
+  .main article p {
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: 52px;
+    margin-bottom: 52px;
+  }
+  .main article .button_container button {
+    width: 193px;
+    height: 58px;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .images_container {
+    margin-top: 280px;
   }
   .image-hero-left {
     order: 5;
   }
+  .product_description {
+    width: 540px;
+    margin: auto;
+  }
+  .product_description .use {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 4px;
+    margin-bottom: 50px;
+  }
+  .product_description .middle_p {
+    font-size: 40px;
+    margin-bottom: 40px;
+    line-height: 44px;
+    font-weight: bold;
+  }
+  .product_description .last {
+    font-size: 18px;
+    line-height: 26;
+    margin-bottom: 150px;
+  }
   footer {
-    display: flex;
     background-image: url(desktop-footer.jpg);
-    align-items: center;
     height: 308px;
   }
-  button {
+  footer .content {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+  }
+  footer .content .pi {
+    font-size: 40px;
+    line-height: 44px;
+    text-align: justify;
+    width: 350px;
+    margin-right: 50px;
+  }
+  footer .content .hi {
+    font-size: 18px;
+    line-height: 26px;
+    width: 350px;
+  }
+  footer .content .third_button {
+    width: 193px;
+    height: 58px;
+  }
+  footer .content button {
     display: inline;
   }
-  .button_container {
+  footer .content .button_container {
     padding-left: 5em;
   }
 }
-@media (min-width: 1100px) {
-  .button_container {
+@media (min-width: 1000px) and (min-width: 1100px) {
+  footer .button_container {
     padding-left: 10rem;
   }
 }/*# sourceMappingURL=style.css.map */
